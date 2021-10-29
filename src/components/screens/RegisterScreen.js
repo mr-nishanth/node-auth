@@ -30,7 +30,8 @@ const RegisterScreen = ({ history }) => {
 
     try {
       const { data } = await axios.post(
-        "/api/auth/register",
+        // "/api/auth/register",
+        "https://node-express-mongodb-jwt-auth.herokuapp.com/api/auth/register",
         {
           username,
           email,

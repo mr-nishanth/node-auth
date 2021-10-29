@@ -18,7 +18,8 @@ const ForgotPasswordScreen = () => {
 
     try {
       const { data } = await axios.post(
-        "/api/auth/forgotpassword",
+        // "/api/auth/forgotpassword",
+        "https://node-express-mongodb-jwt-auth.herokuapp.com/api/auth/forgotpassword",
         { email },
         config
       );

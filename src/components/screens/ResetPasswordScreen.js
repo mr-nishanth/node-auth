@@ -30,7 +30,8 @@ const ResetPasswordScreen = ({  match }) => {
 
     try {
       const { data } = await axios.put(
-        `/api/auth/passwordreset/${match.params.resetToken}`,
+        // `/api/auth/passwordreset/${match.params.resetToken}`,
+        `https://node-express-mongodb-jwt-auth.herokuapp.com/api/auth/passwordreset/${match.params.resetToken}`,
         {
           password,
         },

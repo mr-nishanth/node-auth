@@ -25,7 +25,8 @@ const LoginScreen = ({ history }) => {
 
     try {
       const { data } = await axios.post(
-        "/api/auth/login",
+        // "/api/auth/login",
+        "https://node-express-mongodb-jwt-auth.herokuapp.com/api/auth/login",
         { email, password },
         config
       );
